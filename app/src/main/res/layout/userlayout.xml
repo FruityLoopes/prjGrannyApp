@@ -8,8 +8,7 @@
     <ImageView
         android:id="@+id/imPP"
         android:layout_width="120dp"
-        android:layout_height="114dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="91dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,4 +36,14 @@
         app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnUserAction"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="403dp"
+        android:layout_height="91dp"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

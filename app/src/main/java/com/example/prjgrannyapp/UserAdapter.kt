@@ -8,6 +8,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
@@ -64,6 +65,10 @@ class UserAdapter :ListAdapter<User , UserAdapter.UserAdapter>(UserViewHolder())
                 Log.d("AddNewUser","Error happened "+e.toString())
                 e.printStackTrace()
             }
+        }
+        //button click listener
+        holder.itemView.findViewById<Button>(R.id.btnUserAction).setOnClickListener{
+            Log.d("AddNewUser" , "Button Pressed ${user.Name} was pressed")
         }
     }
 
